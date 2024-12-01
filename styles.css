@@ -36,11 +36,48 @@ body {
     margin-bottom: 10px;
   }
   
-  input {
+ 
+  input, select {
     font-size: 1rem;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 200px;
+    border-radius: 5px;
+    width: 220px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  input:focus {
+    border-color: #555;
+    outline: none;
+  }
+  button {
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #result, #error {
+    font-size: 1rem;
+    margin-top: 20px;
+    display: none; /* Hide both messages by default */
+  }
+  
+  #error {
+    color: red;
+    font-weight: bold;
+  }
+  
+  #result {
+    font-weight: bold;
+    color: #333;
   }
   
